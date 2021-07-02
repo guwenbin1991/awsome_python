@@ -1,2 +1,3 @@
-#for test a.py
-print "guwenbin"
+import unittest
+
+class TestStringMethods()

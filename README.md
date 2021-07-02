@@ -1,2 +1,3 @@
-# awsome_python_webapp
-this is python program which create web and app related
+This is my python program 
+I want to record my Python related work in this repo
+Good Luck!

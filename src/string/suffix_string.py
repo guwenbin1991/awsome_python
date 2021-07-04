@@ -34,7 +34,7 @@ class SuffixArray(object):
         StringA = StringB: 0
         StringA < StringB: -1
         '''
-        if StringA == StringB:
+        if StringB.startswith(StringA):
             return 0
         elif StringA > StringB:
             return 1
@@ -50,13 +50,13 @@ class SuffixArray(object):
         '''
         lo = 0
         high = len(StringArray) - 1
-        while lo < high:
+        while lo <= high:
             mid = lo + (high - lo)/2
             cmp = self.compare_string(Target, StringArray[mid])
             if cmp == 0:
                 return True
-            elif cmp < 0:
-                high = mid - 1
-            else:
+            elif cmp > 0:
                 lo = mid + 1
+            else:
+                high = mid - 1
         return False

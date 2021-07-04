@@ -31,6 +31,7 @@ SHELL := /bin/bash
 
 ## Sub folders definition
 SUBDIRS = src
+SUBDIRS_STRING = src/string
 
 ## Targets definition
 .PHONY: all build_t test install
@@ -49,7 +50,8 @@ all:: clean
 ## Include subdirs.mk
 # include ${MK}/utils/subdirs.mk
 clean:
-	rm $(SUBDIRS)/*.pyc > /dev/null 2>&1
+	rm -f $(SUBDIRS)/*.pyc >/dev/null 2>&1
+	rm -f $(SUBDIRS_STRING)/*.pyc >/dev/null 2>&1
 
 ## Set the default goal
 .DEFAULT_GOAL := all

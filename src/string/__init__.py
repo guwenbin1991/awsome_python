@@ -1,1 +1,2 @@
-from suffix_string import SuffixArray
+from .suffix_string import SuffixArray
+from .files import ReadTextFile

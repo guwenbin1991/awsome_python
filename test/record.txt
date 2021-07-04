@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    main()
+
+        for item in item_list:
+            for j in range(, length_of_arr - 1):
+                arrA = self.get_real_value(arr[:i+1])
+                arrB = self.get_real_value(arr[i+1:j+1])
+                arrC = self.get_real_value(arr[j+1:])
+                
+                if arrA == arrB:
+                    if arrB == arrC:
+                        if arrC == []:
+                            return -1, -1
+                        else:
+                            return i, j+1

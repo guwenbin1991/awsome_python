@@ -14,7 +14,6 @@ def main():
     content = readfilecontent.read_content_from_files(notestxtpath)
     strings = suffixstring.build_strings(content)
      
-    defined_content = readfilecontent.read_content_from_files(txtpath)
     defined_string = suffixstring.build_strings(defined_content.strip())
     searched_strings = []
 
@@ -25,7 +24,5 @@ def main():
                 lsr = string
 
     print("The longest substring is:{}".format(lsr))
-
-
 if __name__ == '__main__':
     main()
